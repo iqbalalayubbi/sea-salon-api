@@ -10,6 +10,7 @@ const clientRouter = require("./routes/client.js");
 const authenticationRouter = require("./routes/authentication.js");
 const branchRouter = require("./routes/branch.js");
 const reviewRouter = require("./routes/review.js");
+const reservationRouter = require("./routes/reservation.js");
 
 const app = express();
 
@@ -30,5 +31,6 @@ app.use("/client", clientRouter);
 app.use("/authentication", authenticationRouter);
 app.use("/branch", branchRouter);
 app.use("/review", reviewRouter);
+app.use("/reservation", reservationRouter);
 
 module.exports = app;
