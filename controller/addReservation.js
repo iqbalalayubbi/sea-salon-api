@@ -10,7 +10,7 @@ async function addReservation(req, res, next) {
     const reservationData = req.body;
     const reservationClient = await Client.findOneAndUpdate(
       {
-        email: result.email,
+        email: "thomas.n@compfest.id",
       },
       { $push: { reservation: reservationData } },
       { new: true }

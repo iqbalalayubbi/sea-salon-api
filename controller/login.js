@@ -19,7 +19,7 @@ async function login(req, res, next) {
       res.status(200).json(response);
     } else {
       const response = createResponse(400, "Login client failed");
-      res.status(400).json(response);
+      res.status(401).json(response);
     }
   }
 }
